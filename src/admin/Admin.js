@@ -15,7 +15,7 @@ class Admin extends Component {
             <div className="container">
                 <h1>PAinel Administrativo</h1>
                 <Route path = {'/'} component={AdminMenu}></Route>
-                <Route path={'$[this.props.math.url}/portfolio'} component={AdminPortfolio} />
+                <Route path={'${this.props.math.url}/portfolio'} component={AdminPortfolio} />
                 <p>{JSON.stringify(this.props)}</p>
                 
 
